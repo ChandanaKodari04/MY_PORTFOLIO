@@ -1,0 +1,779 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chandana Kodari - Portfolio</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Georgia', serif;
+      line-height: 1.6;
+      color: #1f5bc2;
+      background: #f8f9fa;
+    }
+
+    header {
+      background: white;
+      padding: 1rem 0;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 2rem;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #723b6c;
+      text-decoration: none;
+    }
+
+    .nav-menu {
+      display: flex;
+      list-style: none;
+      gap: 2rem;
+    }
+
+    .nav-menu a {
+      color: #910e82;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    .nav-menu a:hover {
+      color: #f99ef9;
+    }
+
+    main {
+      margin-top: 80px;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+
+    section {
+      margin: 4rem 0;
+      padding: 2rem 0;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 6rem 0;
+      background: linear-gradient(135deg, #d070e5 0%, #6c1378 100%);
+      color: white;
+      margin-top: -80px;
+      padding-top: 10rem;
+    }
+
+    .hero h1 {
+      font-size: 3.5rem;
+      margin-bottom: 1rem;
+      font-weight: 300;
+    }
+
+    .hero p {
+      font-size: 1.3rem;
+      margin-bottom: 2rem;
+      opacity: 0.9;
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .section-title {
+      font-size: 2.5rem;
+      color: #ca1794;
+      margin-bottom: 1rem;
+      font-weight: 300;
+    }
+
+    .section-subtitle {
+      font-size: 1.1rem;
+      color: #6320c0;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .about-content {
+      display: grid;
+      grid-template-columns: 300px 1fr;
+      gap: 3rem;
+      align-items: start;
+    }
+
+    .profile-card {
+      background: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .profile-image img {
+      width: 100%;
+      border-radius: 50%;
+    }
+
+    .about-text {
+      background: white;
+      padding: 2.5rem;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .about-text p {
+      color: #174b50;
+      margin-bottom: 1.5rem;
+      text-align: justify;
+    }
+
+    .education-timeline {
+      position: relative;
+      padding-left: 2rem;
+    }
+
+    .education-timeline::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      background: #4da7e3;
+    }
+
+    .education-item {
+      background: white;
+      padding: 2rem;
+      margin-bottom: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      margin-left: 2rem;
+    }
+
+    .education-item h3 {
+      color: #1f0f86;
+      margin-bottom: 0.5rem;
+    }
+
+    .education-item .institution {
+      color: #a253bb;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+    .skill-category {
+      background: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .skill-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .skill-item {
+      background: #ecf0f1;
+      color: #2c3e50;
+      padding: 0.4rem 1rem;
+      border-radius: 20px;
+      font-size: 0.9rem;
+    }
+
+    footer {
+      background: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 3rem 0;
+      margin-top: 4rem;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <a href="#" class="logo">Chandana</a>
+    <ul class="nav-menu">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section id="home" class="hero">
+    <div class="container">
+      <h1>Chandana Kodari</h1>
+      <p>AI & ML Enthusiast | Aspiring Developer</p>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">About Me</h2>
+      </div>
+      <div class="about-content">
+        <div class="profile-card">
+          <div class="profile-image">
+            <img src="Chandana.jpg" alt="Chandana Kodari">
+          </div>
+          <h5>Chandana Kodari</h5>
+        </div>
+        <div class="about-text">
+          <p>I am an Artificial Intelligence and Machine Learning student passionate about creating intelligent and user-focused solutions. My interests include machine learning, data science, and web development. I love exploring new technologies and applying them to real-world challenges.</p>
+          <p>Currently, I am pursuing my B.Tech in AIML at Shri Vishnu Engineering College for Women, where I’m continuously improving my technical, analytical, and communication skills.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="education">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Education</h2>
+      </div>
+      <div class="education-timeline">
+        <div class="education-item">
+          <h3>B.Tech - Artificial Intelligence & Machine Learning</h3>
+          <div class="institution">Shri Vishnu Engineering College for Women</div>
+          <div>2022 - 2026</div>
+          <span class="grade">CGPA: 8.37</span>
+        </div>
+        <div class="education-item">
+          <h3>Intermediate (MPC)</h3>
+          <div class="institution">APSWR Jr College, Gopalapuram</div>
+          <div>2020 - 2022</div>
+          <span class="grade">89.8%</span>
+        </div>
+        <div class="education-item">
+          <h3>Schooling</h3>
+          <div class="institution">APSWR School for Girls, Jangareddigudem</div>
+          <div>2019 - 2020</div>
+          <span class="grade">93%</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Technical Skills</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3>Programming Languages</h3>
+          <div class="skill-list">
+            <span class="skill-item">HTML</span>
+            <span class="skill-item">CSS</span>
+            <span class="skill-item">JavaScript</span>
+            <span class="skill-item">React.js</span>
+            <span class="skill-item">Java</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3>Tools & Technologies</h3>
+          <div class="skill-list">
+            <span class="skill-item">MySQL</span>
+            <span class="skill-item">Git</span>
+            <span class="skill-item">GitHub</span>
+            <span class="skill-item">Excel</span>
+            <span class="skill-item">Figma</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3>Frameworks & Libraries</h3>
+          <div class="skill-list">
+            <span class="skill-item">NumPy</span>
+            <span class="skill-item">Pandas</span>
+            <span class="skill-item">Matplotlib</span>
+            <span class="skill-item">Seaborn</span>
+            <span class="skill-item">Jupyter</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Experience</h2>
+      </div>
+      <div class="education-timeline">
+        <div class="education-item">
+          <h3>Machine Learning Intern</h3>
+          <div class="institution">SkillDzire Company</div>
+          <p>Worked on data preprocessing, model training, and evaluation. Built a mini project applying supervised learning algorithms using Python, Pandas, NumPy, and Scikit-learn.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Contact</h2>
+      </div>
+      <p style="text-align:center;">📍 Koyyalagudem, Andhra Pradesh - 534312</p>
+      <p style="text-align:center;">📞 7989727936</p>
+      <p style="text-align:center;">✉️ <a href="mailto:kodarichandan20@gmail.com">kodarichandan20@gmail.com</a></p>
+      <p style="text-align:center;">💻 <a href="https://github.com/ChandanaKodari04">GitHub Profile</a></p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <p>© 2025 Chandana Kodari</p>
+  </div>
+</footer>
+
+</body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chandana Kodari - Portfolio</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Georgia', serif;
+      line-height: 1.6;
+      color: #1f5bc2;
+      background: #f8f9fa;
+    }
+
+    header {
+      background: white;
+      padding: 1rem 0;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 2rem;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #723b6c;
+      text-decoration: none;
+    }
+
+    .nav-menu {
+      display: flex;
+      list-style: none;
+      gap: 2rem;
+    }
+
+    .nav-menu a {
+      color: #910e82;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    .nav-menu a:hover {
+      color: #f99ef9;
+    }
+
+    main {
+      margin-top: 80px;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+
+    section {
+      margin: 4rem 0;
+      padding: 2rem 0;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 6rem 0;
+      background: linear-gradient(135deg, #d070e5 0%, #6c1378 100%);
+      color: white;
+      margin-top: -80px;
+      padding-top: 10rem;
+    }
+
+    .hero h1 {
+      font-size: 3.5rem;
+      margin-bottom: 1rem;
+      font-weight: 300;
+    }
+
+    .hero p {
+      font-size: 1.3rem;
+      margin-bottom: 2rem;
+      opacity: 0.9;
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .section-title {
+      font-size: 2.5rem;
+      color: #ca1794;
+      margin-bottom: 1rem;
+      font-weight: 300;
+    }
+
+    .section-subtitle {
+      font-size: 1.1rem;
+      color: #6320c0;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .about-content {
+      display: grid;
+      grid-template-columns: 300px 1fr;
+      gap: 3rem;
+      align-items: start;
+    }
+
+    .profile-card {
+      background: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .profile-image img {
+      width: 100%;
+      border-radius: 50%;
+    }
+
+    .about-text {
+      background: white;
+      padding: 2.5rem;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .about-text p {
+      color: #174b50;
+      margin-bottom: 1.5rem;
+      text-align: justify;
+    }
+
+    .education-timeline {
+      position: relative;
+      padding-left: 2rem;
+    }
+
+    .education-timeline::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      background: #4da7e3;
+    }
+
+    .education-item {
+      background: white;
+      padding: 2rem;
+      margin-bottom: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      margin-left: 2rem;
+    }
+
+    .education-item h3 {
+      color: #1f0f86;
+      margin-bottom: 0.5rem;
+    }
+
+    .education-item .institution {
+      color: #a253bb;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+    .skill-category {
+      background: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .skill-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .skill-item {
+      background: #ecf0f1;
+      color: #2c3e50;
+      padding: 0.4rem 1rem;
+      border-radius: 20px;
+      font-size: 0.9rem;
+    }
+
+    footer {
+      background: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 3rem 0;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <a href="#" class="logo">Chandana</a>
+    <ul class="nav-menu">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section id="home" class="hero">
+    <div class="container">
+      <h1>Chandana Kodari</h1>
+      <p>AI & ML Enthusiast | Aspiring Developer</p>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">About Me</h2>
+      </div>
+      <div class="about-content">
+        <div class="profile-card">
+          <div class="profile-image">
+            <img src="Chandana.jpg" alt="Chandana Kodari">
+          </div>
+          <h5>Chandana Kodari</h5>
+        </div>
+        <div class="about-text">
+          <p>I am an Artificial Intelligence and Machine Learning student passionate about creating intelligent and user-focused solutions. My interests include machine learning, data science, and web development. I love exploring new technologies and applying them to real-world challenges.</p>
+          <p>Currently, I am pursuing my B.Tech in AIML at Shri Vishnu Engineering College for Women, where I’m continuously improving my technical, analytical, and communication skills.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="education">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Education</h2>
+      </div>
+      <div class="education-timeline">
+        <div class="education-item">
+          <h3>B.Tech - Artificial Intelligence & Machine Learning</h3>
+          <div class="institution">Shri Vishnu Engineering College for Women</div>
+          <div>2022 - 2026</div>
+          <span class="grade">CGPA: 8.37</span>
+        </div>
+        <div class="education-item">
+          <h3>Intermediate (MPC)</h3>
+          <div class="institution">APSWR Jr College, Gopalapuram</div>
+          <div>2020 - 2022</div>
+          <span class="grade">89.8%</span>
+        </div>
+        <div class="education-item">
+          <h3>Schooling</h3>
+          <div class="institution">APSWR School for Girls, Jangareddigudem</div>
+          <div>2019 - 2020</div>
+          <span class="grade">93%</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Technical Skills</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3>Programming Languages</h3>
+          <div class="skill-list">
+            <span class="skill-item">HTML</span>
+            <span class="skill-item">CSS</span>
+            <span class="skill-item">JavaScript</span>
+            <span class="skill-item">React.js</span>
+            <span class="skill-item">Java</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3>Tools & Technologies</h3>
+          <div class="skill-list">
+            <span class="skill-item">MySQL</span>
+            <span class="skill-item">Git</span>
+            <span class="skill-item">GitHub</span>
+            <span class="skill-item">Excel</span>
+            <span class="skill-item">Figma</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3>Frameworks & Libraries</h3>
+          <div class="skill-list">
+            <span class="skill-item">NumPy</span>
+            <span class="skill-item">Pandas</span>
+            <span class="skill-item">Matplotlib</span>
+            <span class="skill-item">Seaborn</span>
+            <span class="skill-item">Jupyter</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Experience</h2>
+      </div>
+      <div class="education-timeline">
+        <div class="education-item">
+          <h3>Machine Learning Intern</h3>
+          <div class="institution">SkillDzire Company</div>
+          <p>Worked on data preprocessing, model training, and evaluation. Built a mini project applying supervised learning algorithms using Python, Pandas, NumPy, and Scikit-learn.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Added Projects Section -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Projects</h2>
+      </div>
+      <div class="education-timeline">
+
+        <div class="education-item">
+          <h3>Personal Portfolio Website</h3>
+          <div class="institution">HTML, CSS</div>
+          <p>Created a personal portfolio website using HTML and CSS to showcase my skills, projects, and achievements. Focused on a clean, user-friendly design highlighting front-end development fundamentals.</p>
+          <p><a href="https://github.com/ChandanaKodari04/portfolio" target="_blank">GitHub Link</a></p>
+        </div>
+
+        <div class="education-item">
+          <h3>Career Guidance Platform (Real-Time ML Project)</h3>
+          <div class="institution">HTML, CSS, JavaScript, MySQL</div>
+          <p>Developed a real-time career guidance platform integrating machine learning for personalized career recommendations. Built a chatbot that responds to student questions using an ML-based ranking system and connected it with a MySQL database for seamless interaction.</p>
+          <p><a href="https://github.com/ChandanaKodari04/Career_Guidance" target="_blank">GitHub Link</a></p>
+        </div>
+
+        <div class="education-item">
+          <h3>Student Chatboard (Real-Time Chatbot)</h3>
+          <div class="institution">HTML, CSS, JavaScript, MySQL, Python, Sentence Transformers</div>
+          <p>Developed an interactive student chatbot using Streamlit and custom API integration for real-time academic query answering. Implemented backend logic with Sentence Transformers for semantic similarity-based responses.</p>
+          <p><a href="https://github.com/ChandanaKodari04/student_chatbot" target="_blank">GitHub Link</a></p>
+        </div>
+
+      </div>
+    </div>  
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Contact</h2>
+      </div>
+      <p style="text-align:center;">📍 Koyyalagudem, Andhra Pradesh - 534312</p>
+      <p style="text-align:center;">📞 7989727936</p>
+      <p style="text-align:center;">✉️ <a href="mailto:kodarichandan20@gmail.com">kodarichandan20@gmail.com</a></p>
+      <p style="text-align:center;">💻 <a href="https://github.com/ChandanaKodari04">GitHub Profile</a></p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <p>© 2025 Chandana Kodari</p>
+  </div>
+</footer>
+
+</body>
+</html>
